@@ -56,6 +56,13 @@ section::after{
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
 }
+@media screen and (max-width: 600px) {
+    .clock {
+        width: 400px;
+        height: 175px;
+    }
+        
+}
 .clock .container{
     display: flex;
     justify-content: center;
@@ -65,6 +72,11 @@ section::after{
 .clock .container h2{
     font-size: 6em;
     color: #fff;
+}
+@media screen and (max-width: 600px){
+    .clock .container h2 {
+            font-size: 3em;
+        }
 }
 .clock .container h2:nth-child(odd){
     padding: 5px 15px;
@@ -81,4 +93,12 @@ section::after{
     font-size: 2em;
     color: #fff;
     font-weight: 700;
+}
+@media screen and (max-width: 600px) {
+    #ampm{
+        font-size: 1em;
+        top: -40px;
+        left: -8px;
+        font-weight: 500;
+    }
 }
