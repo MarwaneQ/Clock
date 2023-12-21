@@ -17,4 +17,4 @@ function clock() {
     minute.innerHTML = m;
     seconds.innerHTML = s;
 }
-var interval=setInterval(clock,1000)
+setInterval(clock,1000)
